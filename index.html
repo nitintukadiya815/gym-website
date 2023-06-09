@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css Reset */
+    body{
+        color:white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+    
+    }
+    .left{
+        position: absolute;
+        left: 60px;
+        top: 0px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+
+    }
+    .left img{
+        width: 130px;
+        filter: invert(100%);
+        
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 30px auto;
+        /* border: 2px solid red; */
+    }
+    .right{
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        display: inline-block;
+        /* border: 2px solid green; */
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+        color: white;
+    }
+     .navbar li a{
+    color: white; 
+    text-decoration: none;
+    padding:34px 10px;
+    font-size: 20px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color:grey;
+    }
+    .btn{
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border:2px solid grey;
+        border-radius: 10px;
+        font-family:'Baloo2';
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    .btn:hover{
+        background-color: grey;
+
+    }
+    .container{
+        border:2px solid white ;
+        border-radius: 20px;
+        width: 40%;
+        margin: 140px 120px;
+        padding: 10px 20px;
+
+
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 500px;
+        margin: 10px auto;
+        padding: 2px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-family: 'Baloo2';
+        font-size: 20px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: 25px auto;
+        width: 25%;
+        color: black;
+        
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+          <img src="img/gym logo.png" alt="">
+          <div>Nitin Fitness</div>
+        </div>
+        <!-- for navigaton bar -->
+        <div class="mid">
+           <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+           </ul>
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join The Best Gym of Porbandar</h1>
+       <form action="noaction.php"></form>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Name">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Age">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Gender">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your City">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Mobile Number">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Email Id">
+       </div>
+       <button class="btn">Submit</button>
+    </div>
+</body>
+</html>
